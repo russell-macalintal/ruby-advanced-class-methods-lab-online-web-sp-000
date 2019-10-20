@@ -23,8 +23,7 @@ class Song
   end
 
   def self.create_by_name(name)
-    s = self.new
-    s.name = name
+    s = self.new_by_name(name)
     s.save
     s
   end
@@ -52,4 +51,6 @@ class Song
     s.name = data[1].chomp(".mp3")
     s
   end
+
+  def self
 end
