@@ -52,5 +52,5 @@ class Song
     s
   end
 
-  def self
+  # def self
 end
