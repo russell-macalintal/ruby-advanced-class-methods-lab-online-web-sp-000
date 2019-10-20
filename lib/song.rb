@@ -40,4 +40,8 @@ class Song
       self.find_by_name(name)
     end
   end
+
+  def self.alphabetical
+    self.all.sort_by {|song| song.name}
+  end
 end
